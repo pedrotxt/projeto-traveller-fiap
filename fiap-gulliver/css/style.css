@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+/* Utility Classes */
+.tag-item {
+  background: 0 0;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 50px;
+  padding: 9px 15px 7px;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-right: 9px;
+  transition: all 300ms ease;
+}
+
+.tag-item:hover {
+  background-color: #2c5398;
+  cursor: pointer;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  background: rgba(0, 0, 0, 0.469);
+  color: white;
+  justify-content: center;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+}
+
+#navbar .navbar-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+#navbar .navbar-container ul {
+  display: flex;
+}
+
+#navbar .navbar-container ul li {
+  padding: 0 20px;
+  transition: all 300ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+  color: #2c5398;
+  cursor: pointer;
+}
+
+/* Showcase */
+#showcase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url('https://wordpress-network.prod.aws.skyscnr.com/wp-content/uploads/2018/05/GettyImages-165142598.jpg') center center/cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#showcase .showcase-container h2 {
+  font-size: 3.5rem ;
+}
+
+#showcase .showcase-container p {
+  margin: 15px 0 ;
+  font-size: 1.1rem;
+}
+
+#showcase .tags-container {
+  display: flex;
+  align-content: space-between;
+}
+
+/* Page */
+#page {
+  background-color: rgb(242, 242, 242);
+}
+
+/* Page About */
+#page .page-about {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page .about-title{
+  color: #2c5398 ;
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+#page .about-subtitle {
+  text-align: center;
+  width: 80%;
+}
+
+#page .about-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+#page p{
+  color: #636363;
+}
+
+#page .about-feature-content {
+  margin-left: 25px;
+  text-align:justify;
+}
+
+#page .about-conteudo .about-subtitulo{
+  color: #636363;
+  border-bottom: solid #2c5398 1px;
+}
+
+#page .about-feature-itens {
+  display: flex;
+  margin-right: 5%;
+  align-items: center;
+}
+
+#page .about-feature-itens:not(:first-child) {
+  margin-top: 3%;
+}
+
+#page .about-feature-itens i {
+  box-shadow: 3px 4px 3px 4px rgba(0, 0, 0, 0.348);
+  border-radius: 100%;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+#page .about-image img {
+  display: flex;
+  height: 435px;
+  width: 570px;
+  border-radius: 20px;
+}
+
+/* Card */
+
+.card-background {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2c5398;
+  padding: 40px;
+  color: #fff;
+}
+
+.card {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-content {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.609);
+}
+
+.card-image {
+  height: 250px;
+  background-color: #2c5398;
+}
+
+.card .card-img-one {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cidade_Maravilhosa.jpg/1200px-Cidade_Maravilhosa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card-img-two {
+  background-image: url("https://rotadeferias.com.br/wp-content/uploads/2019/02/1-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card-img-three {
+  background-image: url("https://www.tribunagsp.com.br/wp-content/uploads/2022/01/chuvas-em-osasco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-text {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.card-text h2 {
+  letter-spacing: 1.5px;
+  color: #203e72;
+}
+
+.card-text p {
+  margin: 15px 0px;
+  font-size: 15px;
+}
+
+.card-text a {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  background-color: #2c5398;
+  padding: 10px 18px;
+}
+
+.card-text a:hover {
+  background-color: #203e72;
+  transition: 1s ease;
+}
+
+/* Page Content */
+
+.blog {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.blog .blog-head h1 {
+  color: #2c5398 ;
+  font-size: 55px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.blog .blog-head p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.blog-container {
+  display: flex;
+  align-items: center;
+ 
+  margin-top: 20px;
+  box-shadow: 3px 4px 3px 3px rgba(0, 0, 0, 0.348);
+}
+
+.blog-content {
+  width: 100%;
+  margin-left: 30px;
+}
+
+.blog-content h2 {
+  padding: 10px;
+}
+
+.blog-content p {
+  padding: 10px;
+}
+
+.blog-image {
+  height: 280px;
+  width: 23%;
+  background-color: #707b8e;
+}
+
+.blog .blog-img-one {
+  background-image: url("https://cdn.discordapp.com/attachments/1008538732942598205/1087547449062719498/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog .blog-img-two {
+  background-image: url("https://ilhasmaldivas.com.br/wp-content/uploads/2021/10/ilhas-maldivas-galeria-vakkaru-resort-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog a{
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #2c5398;
+  padding: 10px;
+  display: inline-block;
+  padding: 10px 18px;
+}
+
+.blog a:hover {
+  color: #203e72;
+  transition: 1s ease;
+}
+
+.blog .blog-btn-todas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.blog .blog-btn-todas a{
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  background-color: #2c5398;
+  padding: 10px 18px;
+}
+
+.blog .blog-btn-todas a{
+  background-color: #203e72;
+  transition: 1s ease;
+}
+
+
+/* Cabeçalho */
+
+#footer {
+  background: black;
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  padding: 50px 0;
+}
+
+#footer .footer-content {
+ display: flex;
+ width: 66%;
+ margin: auto;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#footer .footer-content .footer-menu {
+  margin: 0 20px;
+  width: 33%;
+}
+
+#footer .footer-content .footer-menu p{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c6c6c6;
+  font-size: 0.9rem;
+}
+
+#footer .footer-content .footer-menu .info{
+  font-size: 1.1rem;
+}
+
+#footer .footer-content .footer-menu .link:hover{
+  color: #2c5398;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials i {
+  margin: 0 20px;
+  font-size: 1.5rem;
+}
