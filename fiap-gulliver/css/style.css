@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -68,6 +69,11 @@ body {
   cursor: pointer;
 }
 
+#navbar .navbar-item {
+  color: inherit;
+  color: white;
+}
+
 /* Showcase */
 #showcase {
   height: 100vh;
@@ -96,6 +102,37 @@ body {
 }
 
 #showcase .tags-container {
+  display: flex;
+  align-content: space-between;
+}
+
+#showcase-destinos {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2019/05/passagens-atenas-ilhas-gregas-grecia-capa2019-01.jpg') center center/cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: color;
+}
+
+#showcase-destinos .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#showcase-destinos .showcase-container h2 {
+  font-size: 3.5rem ;
+}
+
+#showcase-destinos .showcase-container p {
+  margin: 15px 0 ;
+  font-size: 1.5rem;
+}
+
+#showcase-destinos .tags-container {
   display: flex;
   align-content: space-between;
 }
@@ -413,4 +450,67 @@ body {
 .socials i {
   margin: 0 20px;
   font-size: 1.5rem;
+}
+
+/* Destinos */
+#block-container .block-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  padding: 15px;
+}
+
+#block-container .block-content .block-coluna {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+	margin: 15px;
+	background:#fff;
+	border: 1px solid #2c5398;
+	text-align: center;
+}
+
+#block-container .block-content .block-coluna img {
+  max-height: 180px;
+	width: 100%;
+	border-bottom: 4px solid #2c5398;
+}
+
+
+#block-container .block-content .block-coluna .block-texto {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+#block-container a {
+  display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	background:#2c5398;
+	color:#fff;
+	padding:5px;
+	margin: 0px 10px 10px 10px;
+  font-size: 15px;
+}
+
+#block-container .block-content .block-coluna .block-texto h3 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+/* Titulo */
+.titulo-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.destinos-titulo {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-align: center;
 }
