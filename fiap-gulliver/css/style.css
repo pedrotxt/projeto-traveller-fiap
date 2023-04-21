@@ -116,23 +116,33 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: color;
 }
+#showcase-restaurante {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url('https://blog.serraimperial.com/wp-content/uploads/2020/07/A-gastronomia-%C3%A9-parte-fundamental-de-uma-experi%C3%AAncia-tur%C3%ADstica.png') center center/cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: color;
+}
 
-#showcase-destinos .showcase-container {
+.showcase-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#showcase-destinos .showcase-container h2 {
+.showcase-container h2 {
   font-size: 3.5rem ;
 }
 
-#showcase-destinos .showcase-container p {
+.showcase-container p {
   margin: 15px 0 ;
   font-size: 1.5rem;
 }
 
-#showcase-destinos .tags-container {
+.tags-container {
   display: flex;
   align-content: space-between;
 }
