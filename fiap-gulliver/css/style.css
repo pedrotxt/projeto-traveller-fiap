@@ -511,6 +511,62 @@ body {
   font-size: 25px;
 }
 
+/* Restaurantes */
+
+#block-container-res .block-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  padding: 15px;
+}
+
+#block-container-res .block-content .block-coluna {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  max-width: 350px;
+	margin: 15px;
+	background:#fff;
+	border: 1px solid #2c5398;
+	text-align: center;
+}
+
+#block-container-res .block-content .block-coluna img {
+  min-height: 250px;
+  max-height: 250px;
+	width: 100%;
+	border-bottom: 4px solid #2c5398;
+}
+
+#block-container-res .block-content .block-coluna .block-texto {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+#block-container-res a {
+  display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	background:#2c5398;
+	color:#fff;
+	padding:5px;
+	margin: 0px 10px 10px 10px;
+  font-size: 15px;
+}
+
+#block-container-res .block-content .block-coluna .block-texto h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#block-container-res .block-content .block-coluna .block-texto p {
+  padding: 10px;
+}
+
 /* Titulo */
 .titulo-container {
   margin-top: 35px;
