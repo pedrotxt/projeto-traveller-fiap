@@ -15,13 +15,16 @@
   <!-- Navbar -->
   <navbar id="navbar">
     <div class="navbar-container">
-      <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
       <ul class="navbar-items">
+        <a href="./index.html">
+          <li><img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
+        </a>
+        </a>
         <a href="./index.html">
           <li class="navbar-item">Página Inicial</li>
         </a>
         <a href="./Destinos.html">
-          <li class="navbar-item">Encontre os Melhores Destinos</li>
+          <li class="navbar-item">Melhores Destinos</li>
         </a>
         <a href="./Hoteis.html">
           <li class="navbar-item">Hospedagem</li>
@@ -30,13 +33,14 @@
           <li class="navbar-item">Gastronomia</li>
         </a>
         <li class="navbar-item">Blog</li>
+        <li class="navbar-item"><a href="./cadastro.html"><button type="submit" name="cadastro" class="cadastro-button">Cadastre-se</button></a></li>
+        <li class="navbar-item"><a href="./login.html"><button type="submit" name="login" class="button-login">Login</button></a></li>
       </ul>
     </div>
   </navbar>
-
   <div id="showcase-restaurante">
     <div class="showcase-container">
-      <h2>Bares e Restaurantes que você precisa conhecer!</h2>
+      <h2 id="titulorestaurante">Bares e Restaurantes que você precisa conhecer!</h2>
       <p>Os mais fora da rota comum experiências gastronômicas incríveis</p>
     </div>
   </div>
@@ -51,9 +55,11 @@
         <img src="./images/Restaurante_Theatro_Bar_dos_Arcos.jpg"
           alt="Imagem Restaurante Theatro Municipal Bar dos Arcos">
         <div class="block-texto">
-          <h3>Bar dos Arcos</h3>
+          <h3 id="theatrorestaurante">Theatro Municipal - Bar dos Arcos</h3>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta earum facilis ullam perspiciatis, repellat aliquam dicta rem tenetur adipisci quas, in eaque recusandae repudiandae error blanditiis alias numquam inventore beatae?</p>
+          <p>
+            No subsolo do Theatro Municipal de São Paulo, existe um portal com drinques autorais e clássicos da
+            coquetelaria, além de um menu que faz veganos e carnista sorrirem. O bar é bem-assombrado.</p>
         </div>
         <a href="https://bardosarcos.com.br/">Mais informações</a>
       </div>
@@ -64,11 +70,12 @@
         <img src="./images/Restaurante_Ipiranga_Museum_Food_Park.jpg"
           alt="Imagem Restaurante Ipiranga Museum Food Park">
         <div class="block-texto">
-          <h3>Museu do Ipiranga - Food Park</h3>
+          <h3 id="restaurantemuseu">Museu do Ipiranga - Food Park</h3>
 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae vero, illum asperiores quasi officiis nesciunt ea repellendus, iste aperiam nobis fugiat dolorem? Quibusdam dolores at ipsa excepturi aspernatur tenetur consectetur.</p>
+          <p>Espaço descontraído e familiar petfriendly ao ar livre com bares e lanchonetes móveis foodtrucks com
+            variedades culinárias, música ao vivo e festas temáticas com Cervejas e Drinks.</p>
         </div>
-        <a href="https://museumfoodpark.com.br/">Mais informações</a>
+        <a href="https://www.instagram.com/museumfoodpark/">Mais informações</a>
       </div>
 
       <!-- Caffé  -->
@@ -77,9 +84,11 @@
         <img src="./images/Restaurante_Casa_das_Rosas_Caffé_Ristoro.jpg"
           alt="Imagem Restaurante Casa das Rosas Caffé Ristoro">
         <div class="block-texto">
-          <h3>Casa das Rosas - Caffé Ristoro</h3>
+          <h3 id="restaurantecasadasrosas">Casa das Rosas - Caffé Ristoro</h3>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus quis tenetur id, tempore animi, modi a amet provident iure sed quasi ducimus accusantium deleniti corrupti eos recusandae! Distinctio, voluptate.</p>
+          <p>
+            Café e restaurante no Jardim da Casa das Rosas, Cardápio com lanches, pratos, tortas e cafés, destaque aos
+            risotos, ótima opção de almoço ao ar livre em espaço de decoração vintage e retrô.</p>
         </div>
         <a href="https://www.cafferistoro.com.br/">Mais informações</a>
       </div>
@@ -90,9 +99,11 @@
         <img src="./images/Restaurate_ABC_Fabrica_de_Sal_Holy_Water.jpg"
           alt="Imagem Restaurate Fabrica de Sal ABC Holy Water">
         <div class="block-texto">
-          <h3>Antiga Fábrica - Cervejaria Holy Water</h3>
+          <h3 id="restaurantefabrica">Antiga Fábrica - Cervejaria Holy Water</h3>
 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque modi, dolorum earum ipsum, qui accusantium natus consequatur asperiores nobis sunt, sed placeat doloremque rerum illum quam. Pariatur minima in consequatur!</p>
+          <p>
+            A casa de projeto arquitetônico moderno, ambiente requintado com decoração elegante e muito aconchegante. Há
+            uma linda jabuticabeira no centro do restaurante, é possível ver a produção de cerveja.</p>
         </div>
         <a href="https://holywaterbeer.com/">Mais informações</a>
       </div>
@@ -101,11 +112,13 @@
 
       <div class="block-coluna">
         <img src="./images/Restaurante_Paranapiacaba_Bistro_Flor_do_Cambuci.jpg"
-        alt="Imagem Restaurante Paranapiacaba Bistro Flor do Cambuci">
+          alt="Imagem Restaurante Paranapiacaba Bistro Flor do Cambuci">
         <div class="block-texto">
-          <h3>Paranapiacaba - Bistrô Flor do Cambuci</h3>
-  
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero soluta sapiente in voluptatum tempora, laboriosam quae! Assumenda consectetur repellat dignissimos similique, distinctio error corporis suscipit cumque, ab facilis voluptates! Ducimus!</p>
+          <h3 id="restauranteparanapiacaba">Paranapiacaba - Bistrô Flor do Cambuci</h3>
+
+          <p>
+            Ambiente familiar, ar rústico e tranquilo, a feijoada é feita no fogão a lenha, ambiente simples, mas a
+            comida é caseira e deliciosa, cerveja artesanal com cambuci muito boa e também suco de cambuci.</p>
         </div>
         <a href="https://bistro-flor-do-cambuci.negocio.site/">Mais informações</a>
       </div>
@@ -116,57 +129,59 @@
         <img src="./images/Restaurante_Ibirapuera_Prêt_Mam.jpg"
           alt="Imagem Restaurante Paque do Ibirapuera Prêt no MAM">
         <div class="block-texto">
-          <h3>Parque Ibirapuera - Restaurante Prêt no MAM</h3>
+          <h3 id="restauranteparqueibirapuera">Ibirapuera - Restaurante Prêt no MAM</h3>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, impedit molestiae! Dignissimos aliquid facere voluptatibus nam illo incidunt eum soluta corrupti impedit esse dolorem distinctio ad quas officiis, dolore non.</p>
+          <p>
+            Cantina em galeria de arte tranquila com ambiente iluminado que oferece um bufê de massas, guisados e
+            salada, com vista para o Jardim de Esculturas, a marquise do parque e a Oca.</p>
         </div>
         <a href="https://mam.org.br/restaurante/">Mais informações</a>
       </div>
 
 
     </div>
-  </div>  
+  </div>
 
-        
 
-      <!--Botão voltar ao Topo-->
-      <p>
-        <a href="#titulorestaurante">Voltar ao Topo da Página</a>
-      </p>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="footer-content">
-          <ul class="footer-menu">
-            <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="logo" class="logo">
-            <li class="footer-menu-item info">
-              Mergulhe nas nossas dicas para levar na mala a conexão de uma verdadeira experiência de viagem.
-              Entregue-se
-              de
-              corpo e alma à liberdade do autêntico!
-            </li>
-          </ul>
+  <!--Botão voltar ao Topo-->
+  <p>
+    <a href="#titulorestaurante">Voltar ao Topo da Página</a>
+  </p>
 
-          <ul class="footer-menu">
-            <p>Links úteis</p>
-            <li class="footer-menu-item link">
-              Ajuda
-            </li>
-            <li class="footer-menu-item link">
-              Sobre
-            </li>
-          </ul>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <ul class="footer-menu">
+        <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="logo" class="logo">
+        <li class="footer-menu-item info">
+          Mergulhe nas nossas dicas para levar na mala a conexão de uma verdadeira experiência de viagem.
+          Entregue-se
+          de
+          corpo e alma à liberdade do autêntico!
+        </li>
+      </ul>
 
-          <div class="socials">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-          </div>
-        </div>
-      </footer>
+      <ul class="footer-menu">
+        <p>Links úteis</p>
+        <li class="footer-menu-item link">
+          Ajuda
+        </li>
+        <li class="footer-menu-item link">
+          Sobre
+        </li>
+      </ul>
 
-      <!-- Scripts -->
-      <script src="https://kit.fontawesome.com/9be75513e7.js" crossorigin="anonymous"></script>
+      <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/9be75513e7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

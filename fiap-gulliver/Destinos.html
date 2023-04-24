@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg"/>
+  <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Gulliver Travel</title>
 </head>
+
 <body>
-  
+
   <!-- Navbar -->
   <navbar id="navbar">
     <div class="navbar-container">
-      <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
       <ul class="navbar-items">
-        <a href="./index.html"><li class="navbar-item">Página Inicial</li></a>
-        <a href="./Destinos.html"><li class="navbar-item">Encontre os Melhores Destinos</li></a>
-        <a href="./Hoteis.html"><li class="navbar-item">Hospedagem</li></a>
-        <a href="./Restaurantes.html"><li class="navbar-item">Gastronomia</li></a>
+        <a href="./index.html">
+          <li><img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
+        </a>
+        </a>
+        <a href="./index.html">
+          <li class="navbar-item">Página Inicial</li>
+        </a>
+        <a href="./Destinos.html">
+          <li class="navbar-item">Melhores Destinos</li>
+        </a>
+        <a href="./Hoteis.html">
+          <li class="navbar-item">Hospedagem</li>
+        </a>
+        <a href="./Restaurantes.html">
+          <li class="navbar-item">Gastronomia</li>
+        </a>
         <li class="navbar-item">Blog</li>
+        <li class="navbar-item"><a href="./cadastro.html"><button type="submit" name="cadastro" class="cadastro-button">Cadastre-se</button></a></li>
+        <li class="navbar-item"><a href="./login.html"><button type="submit" name="login" class="button-login">Login</button></a></li>
       </ul>
     </div>
   </navbar>
 
-</header>
+  </header>
 
- <!-- Showcase -->
+  <!-- Showcase -->
   <div id="showcase-destinos">
     <div class="showcase-container">
-      <h2>Descubra os Melhores Roteiros Com o Gulliver Traveller!</h2>
+      <h2 id="#titulodestinos">Descubra os Melhores Roteiros Com o Gulliver Traveller!</h2>
       <p>Os lugares mais surpreendentes de São Paulo a maior cidade da América do Sul</p>
     </div>
   </div>
@@ -41,89 +56,97 @@
       </span>
     </h4>
   </div>
-  
 
-<!--Conteúdos Lugares em São Paulo e Links-->
-<div id="block-container">
-  <div class="block-content"> 
-    <div class="block-coluna">
-      <img src="./images/Theatro.jpg" alt="Imagem de São Paulo Theatro Municipal">
-      <div class="block-texto">
-        <h3 id="theatromunicipal">Theatro Municipal</h3>
-        <p>
-          O Theatro Municipal de São Paulo que é um dos mais importantes teatros do Brasil e foi inaugurado em 1911 para atender ao desejo da elite paulista da época.
-        </p>
+
+  <!--Conteúdos Lugares em São Paulo e Links-->
+  <div id="block-container">
+    <div class="block-content">
+      <div class="block-coluna">
+        <img src="./images/Theatro.jpg" alt="Imagem de São Paulo Theatro Municipal">
+        <div class="block-texto">
+          <h3 id="theatromunicipal">Theatro Municipal</h3>
+          <p>
+            O Theatro Municipal de São Paulo que é um dos mais importantes teatros do Brasil e foi inaugurado em 1911
+            para atender ao desejo da elite paulista da época.
+          </p>
+        </div>
+        <a href="./Restaurantes.html#theatrorestaurante">Bares e Restaurantes</a>
+        <a href="./Hoteis.html#theatrohotel">Hotéis e Pousadas</a>
       </div>
-      <a href="./Restaurantes.html#theatrorestaurante">Bares e Restaurantes</a>
-      <a href="./Hoteis.html#theatrohotel">Hotéis e Pousadas</a>
-    </div>
 
-    <div class="block-coluna">
-        <img src="./images/Ipiranga.jpg" alt="Imagem de São Paulo Museu do Ipiranga"> 
+      <div class="block-coluna">
+        <img src="./images/Ipiranga.jpg" alt="Imagem de São Paulo Museu do Ipiranga">
         <div class="block-texto">
           <h3 id="museudoipiranga">Museu do Ipiranga</h3>
           <p>
-            O Museu Paulista da Universidade de São Paulo, mais conhecido como Museu do Ipiranga. Foi inaugurado oficialmente em 7 de setembro de 1895 é um importante símbolo da independência do Brasil.
-          </p> 
+            O Museu Paulista da Universidade de São Paulo, mais conhecido como Museu do Ipiranga. Foi inaugurado
+            oficialmente em 7 de setembro de 1895 é um importante símbolo da independência do Brasil.
+          </p>
         </div>
         <a href="./Restaurantes.html#restaurantemuseu">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelipiranga">Hotéis e Pousadas</a>
-    </div>
+      </div>
 
-    <div class="block-coluna">
+      <div class="block-coluna">
         <img src="./images/Casa_das_Rosas.jpg" alt="Imagem de São Paulo Casa das Rosas">
         <div class="block-texto">
           <h3 id="casadasrosas">Casa das Rosas</h3>
           <p>
-            A "Casa das Rosas" recebeu esse nome pois possuía um dos maiores e mais belos jardins de rosas da cidade. A partir de 2004, a Casa se tornou o Espaço Haroldo de Campos de Poesia e Literatura, o imóvel revela uma parte da história da avenida Paulista que nem todos conhecem.
+            A "Casa das Rosas" recebeu esse nome pois possuía um dos maiores e mais belos jardins de rosas da cidade. A
+            partir de 2004, a Casa se tornou o Espaço Haroldo de Campos de Poesia e Literatura, o imóvel revela uma
+            parte da história da avenida Paulista que nem todos conhecem.
           </p>
         </div>
         <a href="./Restaurantes.html#restaurantecasadasrosas">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelcasadasrosas">Hotéis e Pousadas</a>
-    </div>
+      </div>
 
-    <div class="block-coluna">
+      <div class="block-coluna">
         <img src="./images/Fabrica_de_Sal.jpg" alt="Imagem de São Paulo Antiga Fábrica de Sal">
         <div class="block-texto">
           <h3 id="antigafabrica">Antiga Fábrica</h3>
           <p>
-            A antiga fábrica de Sal foi construída em 1898 durante o período da industrialização paulista em conjunto com a estação Ribeirão Pires Railway a edificação é tombada como patrimônio histórico de São Paulo.
+            A antiga fábrica de Sal foi construída em 1898 durante o período da industrialização paulista em conjunto
+            com a estação Ribeirão Pires Railway a edificação é tombada como patrimônio histórico de São Paulo.
           </p>
         </div>
         <a href="./Restaurantes.html#restaurantefabrica">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelfabrica">Hotéis e Pousadas</a>
-    </div>
+      </div>
 
-    <div class="block-coluna">
+      <div class="block-coluna">
         <img src="./images/Paranapiacaba.jpg" alt="Imagem de São Paulo Paranapiacaba">
         <div class="block-texto">
           <h3 id="paranapiacaba">Paranapiacaba</h3>
           <p>
-            Uma vila histórica em ruínas, conhecida também por sua arquitetura inglesa, já se candidatou a Patrimônio Mundial da Humanidade e foi testemunha de uma importante fase de expansão da tecnologia ferroviária no Brasil na segunda metade do século XIX.
+            Uma vila histórica em ruínas, conhecida também por sua arquitetura inglesa, já se candidatou a Patrimônio
+            Mundial da Humanidade e foi testemunha de uma importante fase de expansão da tecnologia ferroviária no
+            Brasil na segunda metade do século XIX.
           </p>
         </div>
         <a href="./Restaurantes.html#restauranteparanapiacaba">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelparanapiacaba">Hotéis e Pousadas</a>
-    </div>
+      </div>
 
-    <div class="block-coluna">
+      <div class="block-coluna">
         <img src="./images/Parque-do-Ibirapuera.jpg" alt="Imagem de São Paulo Parque Ibirapuera">
         <div class="block-texto">
           <h3 id="parquedoibirapuera">Parque do Ibirapuera</h3>
           <p>
-          Reduto dos paulistanos, o Ibirapuera é o mais importante parque urbano de São Paulo. Seus três lagos artificiais são interligados e ocupam 1,6 milhão de m2. Possui muita diversidade em volta dele.
+            Reduto dos paulistanos, o Ibirapuera é o mais importante parque urbano de São Paulo. Seus três lagos
+            artificiais são interligados e ocupam 1,6 milhão de m2. Possui muita diversidade em volta dele.
           </p>
         </div>
         <a href="./Restaurantes.html#restauranteparqueibirapuera">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelibirapuera">Hotéis e Pousadas</a>
+      </div>
     </div>
   </div>
-</div>
 
-<!--Botão Voltar ao Topo-->
-<p>
-<a href="#titulohome">Voltar ao Topo da Página</a> 
-</p>
+  <!--Botão Voltar ao Topo-->
+  <p>
+    <a href="#titulodestinos">Voltar ao Topo da Página</a>
+  </p>
 
 
   <!-- Footer -->
@@ -132,7 +155,8 @@
       <ul class="footer-menu">
         <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="logo" class="logo">
         <li class="footer-menu-item info">
-          Mergulhe nas nossas dicas para levar na mala a conexão de uma verdadeira experiência de viagem. Entregue-se de corpo e alma à liberdade do autêntico!
+          Mergulhe nas nossas dicas para levar na mala a conexão de uma verdadeira experiência de viagem. Entregue-se de
+          corpo e alma à liberdade do autêntico!
         </li>
       </ul>
 
@@ -157,4 +181,5 @@
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/9be75513e7.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

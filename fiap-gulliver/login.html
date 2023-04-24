@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg"/>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Gulliver Travel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Gulliver Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
-    <navbar id="navbar">
-        <div class="navbar-container">
-          <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
-          <ul class="navbar-items">
-            <a href="./index.html"><li class="navbar-item">Página Inicial</li></a>
-            <a href="./Destinos.html"><li class="navbar-item">Encontre os Melhores Destinos</li></a>
-            <a href="./Hoteis.html"><li class="navbar-item">Hospedagem</li></a>
-            <a href="./Restaurantes.html"><li class="navbar-item">Gastronomia</li></a>
-            <li class="navbar-item">Blog</li>
-          </ul>
-          <button type="submit" name="cadastro" class="cadastro-button">Cadastre-se</button>
-          <button type="submit" name="login" class="login-button">Login</button>
-        </div>
-      </navbar>
-      <h1>Login</h1>
-      <form>
-          <label for="username">Usuário</label>
-          <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
-          <label for="password">Senha</label>
-          <input type="password" id="password" name="password" placeholder="Digite a sua senha" required>
-          <button type="submit">Entrar</button>
-      </form>
+
+<body class="body-login">
+  <navbar id="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-items">
+        <a href="./index.html">
+          <li><img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
+        </a>
+        </a>
+        <a href="./index.html">
+          <li class="navbar-item">Página Inicial</li>
+        </a>
+        <a href="./Destinos.html">
+          <li class="navbar-item">Melhores Destinos</li>
+        </a>
+        <a href="./Hoteis.html">
+          <li class="navbar-item">Hospedagem</li>
+        </a>
+        <a href="./Restaurantes.html">
+          <li class="navbar-item">Gastronomia</li>
+        </a>
+        <li class="navbar-item">Blog</li>
+        <li class="navbar-item"><a href="./cadastro.html"><button type="submit" name="cadastro" class="cadastro-button">Cadastre-se</button></a></li>
+        <li class="navbar-item"><a href="./login.html"><button type="submit" name="login" class="button-login">Login</button></a></li>
+      </ul>
+    </div>
+  </navbar>
+
+  <div class="main-container">
+    <div class="img-formulario">
+      <img src="images/undraw_login_re_4vu2.svg" alt="">
+    </div>
+
+    <div class="card-login">
+      <h1 id="Login-H1">Login</h1>
+
+      <div class="float-label">
+        <input class="Input-Login" type="text" id="usuario" placeholder="">
+        <label class="Label-Login" for="usuario">Usuário</label>
+      </div>
+      <div class="float-label">
+        <input class="Input-Login" type="password" id="Senha" placeholder="">
+        <label class="Label-Login" for="senha">Senha</label>
+      </div>
+
+      <div class="Justify-center">
+        <button class="button-login">Entrar</button>
+      </div>
+
+      <div class="Justify-center">
+        <hr id="Hr-Login">
+      </div>
+
+      <p id="P-login">Não tem uma conta?<br>
+        <a id="A-login" href="">Cadastre-se</a>
+      </p>
+
+    </div>
   </div>
 </body>
+
 </html>
