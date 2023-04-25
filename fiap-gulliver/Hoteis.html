@@ -13,42 +13,48 @@
 <body>
 
   <!-- Navbar -->
-  <navbar id="navbar">
-    <div class="navbar-container">
-      <ul class="navbar-items">
-        <a href="./index.html">
-          <li><img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
-        </a>
-        </a>
-        <a href="./index.html">
-          <li class="navbar-item">Página Inicial</li>
-        </a>
-        <a href="./Destinos.html">
-          <li class="navbar-item">Melhores Destinos</li>
-        </a>
-        <a href="./Hoteis.html">
-          <li class="navbar-item">Hospedagem</li>
-        </a>
-        <a href="./Restaurantes.html">
-          <li class="navbar-item">Gastronomia</li>
-        </a>
-        <li class="navbar-item">Blog</li>
-        <li class="navbar-item"><a href="./cadastro.html"><button type="submit" name="cadastro" class="cadastro-button">Cadastre-se</button></a></li>
-        <li class="navbar-item"><a href="./login.html"><button type="submit" name="login" class="button-login">Login</button></a></li>
-      </ul>
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
+        <a href="./index.html">Traveller</a> 
+      </div>
     </div>
-  </navbar>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="./Destinos.html" >Melhores Destinos</a>
+      <a href="./Hoteis.html">Hospedagem</a>
+      <a href="./Restaurantes.html">Gastronomia</a>
+      <a href="./login.html" class="nav-login">Login</a>
+      <a href="./cadastro.html" >Cadastro</a>
+    </div>
+  </div>
 
-  <!--Banner Let's Go Traveller-->
-  <img src="./images/Banner_by-Gulliver_Lets-go-traveller.png" alt="Banner by Gulliver - Let's go traveller">
-  </header>
+
+  <div class="showcase-hotel">
+    <div class="showcase-hostel">
+      <h2 id="titulohotel">Indicações de Hotéis, Hostel e Pousadas!</h2>
+      <p>Opções de hospedagens e comparação de preços</p>
+    </div>
+  </div>
  
+  <div class="titulo-container">
+    <h4 class="block-head block-head-legacy">
+      <span class="destinos-titulo">
+        MAIS RECENTES
+      </span>
+    </h4>
+  </div>
   <!--Contéudos hotéis e pousadas-->
 <div class="hotel-container">
-
-  <h1 id="titulohoteis">Indicações de Hotéis, Hostel e Pousadas!</h1>
-
-  <h2>Opções de hospedagens e comparação de preços</h2>
 
   <!-- Card  -->
   <div class="hotel-card">
@@ -71,7 +77,7 @@
         <div class="hotel-card_details">
           <div class="hotel-local">
             <i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i>
-            <p>Paris</p> 
+            <p>São Paulo</p> 
           </div>
           <div class="hotel-card_icons">
             <i class="fa-solid fa-wifi"></i>
@@ -81,7 +87,7 @@
           </div>
           <div class="hotel-card_text">
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi, iusto at distinctio provident accusamus natus nesciunt, magnam alias molestiae voluptatem pariatur facilis illo ut exercitationem praesentium sit harum odit.
+              Com uma localização atraente na zona da Consolação, em São Paulo, o Hotel São Paulo está situado a 1,3 km do Edifício Copan, a 1,9 km da Catedral Metropolitana de São Paulo e a 2,7 km do MASP São Paulo (museu).
             </span>
           </div>
         </div>
@@ -118,7 +124,7 @@
         <div class="hotel-card_details">
           <div class="hotel-local">
             <i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i>
-            <p>Paris</p> 
+            <p>São Paulo</p> 
           </div>
           <div class="hotel-card_icons">
             <i class="fa-solid fa-wifi"></i>
@@ -128,7 +134,7 @@
           </div>
           <div class="hotel-card_text">
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi, iusto at distinctio provident accusamus natus nesciunt, magnam alias molestiae voluptatem pariatur facilis illo ut exercitationem praesentium sit harum odit.
+              Localizado em rua tranquila o Alto do Ipiranga Hostel oferece comodidade e qualidade em serviços de hospedagem.A 10 minutos da linha Verde do Metrô (Estações Alto de Ipiranga ou Sacomã) nossa localização possibilita ao hóspede estar no coração comercial e cultural de São Paulo, a Avenida Paulista, em apenas 20 minutos.Venha se hospedar conosco e desfrutar do que São Paulo tem de melhor a oferecer em serviços e entretenimento.
             </span>
           </div>
         </div>
@@ -166,7 +172,7 @@
         <div class="hotel-card_details">
           <div class="hotel-local">
             <i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i>
-            <p>Paris</p> 
+            <p>São Paulo</p> 
           </div>
           <div class="hotel-card_icons">
             <i class="fa-solid fa-wifi"></i>
@@ -176,7 +182,7 @@
           </div>
           <div class="hotel-card_text">
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi, iusto at distinctio provident accusamus natus nesciunt, magnam alias molestiae voluptatem pariatur facilis illo ut exercitationem praesentium sit harum odit.
+              Uma excelente opção de hospedagem do Jardim Paulista, o Royal Boutique Jardins já é um nome consagrado no bairro mais nobre da capital paulista. O hotel oferece uma atmosfera aconchegante e serviços personalizados para o seu maior conforto e comodidade. 
             </span>
           </div>
         </div>
@@ -213,7 +219,7 @@
         <div class="hotel-card_details">
           <div class="hotel-local">
             <i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i>
-            <p>Paris</p> 
+            <p>São Paulo</p> 
           </div>
           <div class="hotel-card_icons">
             <i class="fa-solid fa-wifi"></i>
@@ -223,7 +229,7 @@
           </div>
           <div class="hotel-card_text">
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi, iusto at distinctio provident accusamus natus nesciunt, magnam alias molestiae voluptatem pariatur facilis illo ut exercitationem praesentium sit harum odit.
+              A Pousada Magic City possui 64 suítes e está localizado dentro do Parque Aquático Magic City, um paraíso no coração da Mata Atlântica que possui uma piscina exclusiva para os hóspedes, aquecida em até 40ºC, e o melhor é que ela funciona 24h/dia! Que delícia é ter a Mata Atlântica como vizinha! Aproveitar a família, pertinho da natureza. A Wave Point, uma praia com visual paradisíaco que fica pertinho da cidade e longe da correria que completa a experiência da estadia. Ingresso para os Parques já são inclusos na Hospedagem.
             </span>
           </div>
         </div>
@@ -260,7 +266,7 @@
         <div class="hotel-card_details">
           <div class="hotel-local">
             <i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i>
-            <p>Paris</p> 
+            <p>São Paulo</p> 
           </div>
           <div class="hotel-card_icons">
             <i class="fa-solid fa-wifi"></i>
@@ -270,7 +276,7 @@
           </div>
           <div class="hotel-card_text">
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi, iusto at distinctio provident accusamus natus nesciunt, magnam alias molestiae voluptatem pariatur facilis illo ut exercitationem praesentium sit harum odit.
+              Com ótima localização em Santo André, Pousada Avalon Paranapiacaba fica no centro histórico. Quem quiser descobrir as belezas naturais do lugar vai encontrar o que procura em locais como Parque Natural Municipal Nascentes de Paranapiacaba e Parque Ecológico da Gruta Santa Luzia. Além disso, a região também conta com outras atrações como Magic City e Quilombo Valley.
             </span>
           </div>
         </div>
@@ -307,7 +313,7 @@
         <div class="hotel-card_details">
           <div class="hotel-local">
             <i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i>
-            <p>Paris</p> 
+            <p>São Paulo</p> 
           </div>
           <div class="hotel-card_icons">
             <i class="fa-solid fa-wifi"></i>
@@ -317,7 +323,7 @@
           </div>
           <div class="hotel-card_text">
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi, iusto at distinctio provident accusamus natus nesciunt, magnam alias molestiae voluptatem pariatur facilis illo ut exercitationem praesentium sit harum odit.
+              O Pullman São Paulo Ibirapuera é um hotel moderno e está pronto para recebê-lo. Os quartos são aconchegantes, tratados acusticamente, com opções para mobilidade reduzida, escritórios e andares executivos com serviços únicos para sua estada. Todos com wi-fi grátis e climatizados. Os restaurantes servem pratos variados e um menu contemporâneo com cozinha "fusion". Use das salas de evento para ocasiões sociais e trabalho, piscina, academia e Spa Shishindo.
             </span>
           </div>
         </div>
@@ -333,11 +339,6 @@
     </div>
   </div>
 </div>
-
-  <!--Botão Voltar ao Topo-->
-  <p>
-    <a href="#titulohoteis">Voltar ao Topo da Página</a>
-  </p>
 
   <!-- Footer -->
   <footer id="footer">

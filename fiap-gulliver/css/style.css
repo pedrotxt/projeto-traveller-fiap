@@ -10,7 +10,13 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 38px;
+  
 }
+
+a{
+  color: inherit;
+}
+
 
 /* Utility Classes */
 .tag-item {
@@ -32,107 +38,193 @@ body {
 }
 
 .logo {
-  height: 40px;
+  height: 30px;
   width: auto;
+  margin-right: 10px;
 }
 
 /* Navbar */
-#navbar {
-  display: flex;
-  background: rgba(0, 0, 0, 0.800);
-  color: white;
-  justify-content: center;
-  align-items: center;
-  position: sticky; 
-  top: 0;
-  width: 100%;
-}
-
-#navbar .navbar-container {
-  width: 100%;
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 15px 0;
+  height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: sticky; 
+  top: 0;
+  padding: 30px;
 }
 
-#navbar .navbar-container ul {
+.nav-login {
+  background-color: #2c5398;
+}
+
+.nav-login a:hover {
+  background-color: #124eb6;
+}
+
+.nav .nav-header {
+  display: inline;
+}
+
+.nav .nav-header .nav-title {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-#navbar .navbar-container ul li {
-  padding: 0 20px;
-  font-size: 16px;
-  transition: all 300ms ease;
-}
-
-#navbar .navbar-container ul li:hover {
-  color: #2c5398;
-  cursor: pointer;
-}
-
-#navbar .navbar-item {
-  color: inherit;
-  color: white;
   justify-content: center;
-  align-items: center;
-  height: auto;
+  font-size: 22px;
+  color: #fff;
 }
 
+.nav .nav-btn {
+  display: none;
+}
+
+.nav .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav .nav-links  a {
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav .nav-links a:hover {
+  background-color: #203d70c0;
+}
+
+.nav #nav-check {
+  display: none;
+}
+
+@media (max-width:800px) {
+  .nav .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav .nav-btn label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav .nav-btn label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav .nav-btn label span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav .nav-links a {
+    display: block;
+    width: 100%;
+  }
+  .nav #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav #nav-check:checked ~ .nav-links {
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
 /* Showcase */
 /*alterar Showcase para que ele não se estenda por debaixo do navbar*/
-#showcase {
+.showcase {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: white !important;
   background: url('https://wordpress-network.prod.aws.skyscnr.com/wp-content/uploads/2018/05/GettyImages-165142598.jpg') center center/cover;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
+  text-align: center;
 }
 
-#showcase .showcase-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#showcase .showcase-container h2 {
-  font-size: 3.5rem ;
-}
-
-#showcase .showcase-container p {
-  margin: 15px 0 ;
-  font-size: 1.1rem;
-}
-
-#showcase .tags-container {
-  display: flex;
-  align-content: space-between;
-}
-
-#showcase-destinos {
+.showcase-destinos {
   height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   background: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2019/05/passagens-atenas-ilhas-gregas-grecia-capa2019-01.jpg') center center/cover;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: color;
+  text-align: center;
 }
-#showcase-restaurante {
+
+.showcase-destinos .showcase-container h2 {
+  font-size: 2.5rem ;
+}
+
+.showcase-destinos .showcase-container p {
+  margin: 15px 0 ;
+  font-size: 1.2rem;
+}
+
+.showcase-restaurante {
   height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  background: url('https://blog.serraimperfial.com/wp-content/uploads/2020/07/A-gastronomia-%C3%A9-parte-fundamental-de-uma-experi%C3%AAncia-tur%C3%ADstica.png') center center/cover;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: url('https://ultragazempresas.com.br/wp-content/uploads/2019/01/takeshi_foto.jpg') center center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: color;
+  text-align: center;
+}
+
+.showcase-restaurante .showcase-container h2 {
+  font-size: 2.5rem ;
+}
+
+.showcase-restaurante .showcase-container p {
+  margin: 15px 0 ;
+  font-size: 1.2rem;
+}
+
+.showcase-hotel {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url('https://lirp.cdn-website.com/1d1cae4e/dms3rep/multi/opt/DSC_1802+-+FILICO-1920w.jpg') center center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+  text-align: center;
+}
+
+.showcase-hotel .showcase-container h2 {
+  font-size: 2.5rem ;
+}
+
+.showcase-hotel .showcase-container p {
+  margin: 15px 0 ;
+  font-size: 1.2rem;
+}
+
+.showcase-container p {
+  margin: 15px 0 ;
+  font-size: 1.5rem;
 }
 
 .showcase-container {
@@ -162,14 +254,16 @@ body {
 
 /* Page About */
 #page .page-about {
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
   justify-content: center;
 }
 
 #page .about-title{
+  text-align: center;
   color: #2c5398 ;
   font-size: 35px;
   margin-bottom: 8px;
@@ -185,10 +279,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-}
-
-#page p{
-  color: #636363;
 }
 
 #page .about-feature-content {
@@ -225,6 +315,58 @@ body {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1250px) {
+  #page .about-image img {
+    height: 305px;
+    width: 400px;
+    border-radius: 20px;
+  }
+
+  
+  .showcase .showcase-container h2 {
+    font-size: 2.5rem ;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #page .about-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 30px 0px 0px 0px;
+  }
+
+  #page .about-feature {
+    margin-bottom: 30px;
+  }
+  
+  #page .about-feature-itens .about-feature-content {
+    line-height: 25px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #page .about-feature-itens .about-feature-content {
+    line-height: 20px;
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  #page .about-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  #page .about-image img {
+    height: 205px;
+    width: 300px;
+    border-radius: 20px;
+  }
+}
+
 /* Card */
 
 .card-background {
@@ -234,6 +376,7 @@ body {
   background-color: #2c5398;
   padding: 40px;
   color: #fff;
+  text-align: center;
 }
 
 .card {
@@ -294,6 +437,7 @@ body {
 .card-text {
   padding: 15px 10px;
   text-align: center;
+  color: #242424;
 }
 
 .card-text h2 {
@@ -321,6 +465,38 @@ body {
   background-color: #203e72;
   transition: 1s ease;
 }
+
+@media screen and (max-width: 1250px) {
+  .card {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card p{
+    line-height: 25px;
+  }
+
+  .card-background h1 {
+    font-size: 25px;
+  }
+}
+
 
 /* Page Content */
 
@@ -422,6 +598,32 @@ body {
   transition: 1s ease;
 }
 
+@media screen and (max-width: 900px) {
+  .blog-image {
+    display: none;
+  }
+
+  .blog-content{
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blog .blog-head h1{
+    font-size: 45px;
+  }
+
+  .blog-content h2 {
+    font-size: 25px
+  }
+
+  .blog-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
 
 /* Cabeçalho */
 
@@ -430,6 +632,7 @@ body {
   color: #9a9a9a;
   font-size: 0.9rem;
   padding: 50px 0;
+
 }
 
 #footer .footer-content {
@@ -461,6 +664,21 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  #footer .footer-content {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  #footer .footer-content .footer-menu {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
 .socials {
   display: flex;
 }
@@ -484,7 +702,7 @@ body {
   max-width: 350px;
 	margin: 15px;
 	background:#fff;
-	border: 1px solid #2c5398;
+	box-shadow: -1px -1px 10px 10px rgba(0, 0, 0, .212);
 	text-align: center;
 }
 
@@ -535,7 +753,7 @@ body {
   max-width: 350px;
 	margin: 15px;
 	background:#fff;
-	border: 1px solid #2c5398;
+	box-shadow: -1px -1px 10px 10px rgba(0, 0, 0, .212);
 	text-align: center;
 }
 
@@ -665,7 +883,8 @@ body {
   font-size: 12pt;
   border-radius: 4px;
   cursor: pointer;
-  transition: all .5s ease-out
+  transition: all .5s ease-out;
+  margin: 10px 0px 10px 0px;
 }
  
 .button-login:hover{  
@@ -735,7 +954,7 @@ body {
   display: flex;
   margin: 2% 5%;
   padding: 2%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, .212);
   border-radius: 4%;
 }
 
@@ -827,7 +1046,7 @@ body {
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 10px;
-  box-shadow: 1px 1px 6px #0000001c;
+  box-shadow: 4px 4px 4px 4px #0000001c;
 }
 
 .input-box input:hover{ 
@@ -902,12 +1121,45 @@ body {
   color: #fff;
  }
 
+ @media screen and (max-width: 1100px) {
+
+  .input-group .input-box {
+    width: 100%;
+  }
+}
+
+ @media screen and (max-width: 650px) {
+
+  .input-group .input-box {
+    width: 100%;
+  }
+
+  .register-form {
+    width: auto;
+    padding: 0;
+  }
+
+  .cadastro-container {
+    justify-content: center;
+  }
+  .img-formulario {
+    display: none;
+  }
+
+  .register-form .form-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
  /* Hotel */
 .hotel-container {
   display: flex;
   flex-wrap: wrap;
   margin-left: 15%;
   width: 70%;
+  margin-bottom: 15px;
 }
 
 .hotel-card {
@@ -990,4 +1242,54 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+@media screen and (max-width: 1400px) {
+  .hotel-card .hotel-card_images img {
+    height: 100%;
+    width: 250px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hotel-container .hotel-card{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-card .hotel-card_images img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hotel-card_titulo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hotel-local {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hotel-card_price {
+    margin-top: 15px;
+  }
+
+  .hotel-card_details {
+    width: auto;
+}
 }
