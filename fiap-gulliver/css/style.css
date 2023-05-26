@@ -369,17 +369,21 @@ a{
 
 /* Card */
 
-.card-background {
+.card-nobootstrap-background {
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #2c5398;
   padding: 40px;
-  color: #fff;
+
   text-align: center;
 }
 
-.card {
+.card-title-up{
+  color: #fff;
+}
+
+.card-nobootstrap {
   width: 80%;
   margin: 50px auto;
   display: grid;
@@ -387,70 +391,70 @@ a{
   gap: 30px;
 }
 
-.card-content {
+.card-nobootstrap-content {
   background-color: #fff;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.609);
 }
 
-.card-image {
+.card-nobootstrap-image {
   height: 250px;
   background-color: #2c5398;
 }
 
-.card .card-img-one {
+.card-nobootstrap .card-nobootstrap-img-one {
   background-image: url("https://i.ibb.co/Y7fS2Wd/Fabrica-de-Sal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card-img-two {
+.card-nobootstrap .card-nobootstrap-img-two {
   background-image: url("https://i.ibb.co/w47vz95/Casa-das-Rosas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card-img-three {
+.card-nobootstrap .card-nobootstrap-img-three {
   background-image: url("https://i.ibb.co/5FhWnhM/Ipiranga.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card-img-four {
+.card-nobootstrap .card-nobootstrap-img-four {
   background-image: url("https://i.ibb.co/yND9F2f/Paranapiacaba.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card-img-five {
+.card-nobootstrap .card-nobootstrap-img-five {
   background-image: url("https://i.ibb.co/6tYnngH/Theatro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card-img-six {
+.card-nobootstrap .card-nobootstrap-img-six {
   background-image: url("https://i.ibb.co/5G8jkgS/Parque-do-Ibirapuera.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.card-text {
+.card-nobootstrap-text {
   padding: 15px 10px;
   text-align: center;
   color: #242424;
 }
 
-.card-text h2 {
+.card-nobootstrap-text h2 {
   letter-spacing: 1.5px;
   color: #203e72;
 }
 
-.card-text p {
+.card-nobootstrap-text p {
   margin: 15px 0px;
   font-size: 15px;
 }
 
-.card-text a {
+.card-nobootstrap-text a {
   font-family: sans-serif;
   text-decoration: none;
   font-size: 16px;
@@ -461,13 +465,13 @@ a{
   padding: 10px 18px;
 }
 
-.card-text a:hover {
+.card-nobootstrap-text a:hover {
   background-color: #203e72;
   transition: 1s ease;
 }
 
 @media screen and (max-width: 1250px) {
-  .card {
+  .card-nobootstrap {
     width: 80%;
     margin: 50px auto;
     display: grid;
@@ -477,7 +481,7 @@ a{
 }
 
 @media screen and (max-width: 900px) {
-  .card {
+  .card-nobootstrap {
     width: 80%;
     margin: 50px auto;
     display: grid;
@@ -488,11 +492,11 @@ a{
 }
 
 @media screen and (max-width: 500px) {
-  .card p{
+  .card-nobootstrap p{
     line-height: 25px;
   }
 
-  .card-background h1 {
+  .card-nobootstrap-background h1 {
     font-size: 25px;
   }
 }
@@ -818,7 +822,7 @@ a{
   border-radius: 1%;
 }
 
-.card-login{  
+.card-nobootstrap-login{  
   background-color: #ffffff80;
   padding: 30px;
   border: solid 1px #00000060;
@@ -1162,7 +1166,7 @@ a{
   margin-bottom: 15px;
 }
 
-.hotel-card {
+.hotel-card-nobootstrap {
   background-color: #f7f5f5;
   width: 100%;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.541);
@@ -1170,7 +1174,7 @@ a{
   margin: 10px;
 }
 
-.hotel-card .hotel-card_images img {
+.hotel-card-nobootstrap .hotel-card_images img {
 	height: 100%;
   width: 350px;
 	object-fit: cover;
@@ -1245,7 +1249,7 @@ a{
 }
 
 @media screen and (max-width: 1400px) {
-  .hotel-card .hotel-card_images img {
+  .hotel-card-nobootstrap .hotel-card_images img {
     height: 100%;
     width: 250px;
     object-fit: cover;
@@ -1253,12 +1257,12 @@ a{
 }
 
 @media screen and (max-width: 900px) {
-  .hotel-container .hotel-card{
+  .hotel-container .hotel-card-nobootstrap{
     display: flex;
     flex-direction: column;
   }
 
-  .hotel-card .hotel-card_images img {
+  .hotel-card-nobootstrap .hotel-card_images img {
     height: 200px;
     width: 100%;
     object-fit: cover;

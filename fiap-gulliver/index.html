@@ -7,37 +7,55 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap-grid.css">
+  <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" />
+
+  <!-- LINK JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
   <title>Gulliver Travel</title>
+
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <div class="nav-title">
-        <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" class="logo">
-        <a href="./index.html">Traveller</a> 
-      </div>
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    
-    <div class="nav-links">
-      <a href="./Destinos.html" >Melhores Destinos</a>
-      <a href="./Hoteis.html">Hospedagem</a>
-      <a href="./Restaurantes.html">Gastronomia</a>
-      <a href="./login.html" class="nav-login">Login</a>
-      <a href="./cadastro.html" >Cadastro</a>
-    </div>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
+    <a class="navbar-brand" href="#">
+      <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" width="30" height="30"
+        class="d-inline-block align-top">
+      <span class="navbar-brand-titulo">Traveller</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Melhores Destinos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Hospedagem</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gastronomia</a>
+        </li>
+        <li><button type="button" class="btn btn-primary "> Login </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-secondary "> Cadastro </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <!-- Showcase -->
   <div class="showcase">
     <div class="showcase-container">
@@ -104,152 +122,207 @@
 
     </div>
 
-    <!-- Card -->
-    <div class="card-background">
-      <h1>Os lugares mais surpreendentes de São Paulo a maior cidade da América do Sul</h1>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-image card-img-one"></div>
-          <div class="card-text">
-            <h2>Antiga Fábrica</h2>
-            <p>A antiga fábrica de Sal foi construída em 1898 durante o período da industrialização paulista em conjunto
-              com a estação Ribeirão Pires Railway a edificação é tombada como patrimônio histórico de São Paulo.</p>
-            <p>O que fazer na Antiga Fábrica</p>
-            <a href="./Destinos.html#antigafabrica" class="card-btn">Saber Mais</a>
+    <!-- bootstrap -->
+
+
+
+
+    <!-- card-nobootstrap -->
+    <div class="card-nobootstrap-background">
+      <h1 class="card-title-up">Os lugares mais surpreendentes de São Paulo a maior cidade da América do Sul</h1>
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="./images/Fabrica_de_Sal.jpg" class="card-img-top" alt="Usando Cards">
+              <div class="card-body">
+                <h5 class="card-title">Antiga Fábrica</h5>
+                <p class="card-text">A antiga fábrica de Sal foi construída em 1898 durante o período da
+                  industrialização
+                  paulista em conjunto
+                  com a estação Ribeirão Pires Railway a edificação é tombada como patrimônio histórico de São Paulo.
+                </p>
+                <p>O que fazer na Antiga Fábrica</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="./images/Casa_das_Rosas.jpg" class="card-img-top" alt="Usando Cards">
+              <div class="card-body">
+                <h5 class="card-title">Casa das Rosas</h5>
+                <p class="card-text">A Casa das Rosas é um imóvel localizado na Avenida Paulista em São Paulo, o casarão
+                  foi projetado pelo
+                  escritório de Francisco de Paula Ramos de Azevedo pouco antes de sua morte, tendo a construção
+                  terminada
+                  em 1935.</p>
+                <p>O que fazer na Casa das Rosas</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="./images/Ipiranga.jpg" class="card-img-top" alt="Usando Cards">
+              <div class="card-body">
+                <h5 class="card-title">Museu do Ipiranga</h5>
+                <p class="card-text">
+                <p>O Parque da Independência, inaugurado em 1989, nas margens do córrego do bairro do Ipiranga, faz
+                  parte
+                  do
+                  patrimônio histórico cultural brasileiro devido ao Grito da Independência do país, ali proclamada por
+                  D.
+                  Pedro I.</p>
+                <p>O que fazer no Museu do Ipiranga</p>
+                </p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="./images/Paranapiacaba.jpg" class="card-img-top" alt="Usando Cards">
+              <div class="card-body">
+                <h5 class="card-title">Paranapiacaba</h5>
+                <p class="card-text">
+                <p>Uma vila histórica em ruínas, conhecida também por sua arquitetura inglesa, já se candidatou a
+                  Patrimônio
+                  Mundial da Humanidade e foi testemunha de uma importante fase de expansão da tecnologia ferroviária no
+                  Brasil.</p>
+                <p>O que fazer em Paranapiacaba</p>
+                </p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="./images/Theatro.jpg" class="card-img-top" alt="Usando Cards">
+              <div class="card-body">
+                <h5 class="card-title">Theatro Municipal</h5>
+                <p class="card-text">
+                <p>O Theatro Municipal de São Paulo que é um dos mais importantes teatros do Brasil e foi inaugurado em
+                  1911
+                  para atender ao desejo da elite paulista da época que desejava que a cidade estivesse à altura dos
+                  grandes
+                  centros culturais.</p>
+                <p>O que fazer no Theatro Municipal</p>
+                </p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="./images/Parque-do-Ibirapuera.jpg" class="card-img-top" alt="Usando Cards">
+              <div class="card-body">
+                <h5 class="card-title">Parque do Ibirapuera</h5>
+                <p class="card-text">
+                <p>o Ibirapuera é o mais importante parque urbano de São Paulo. Seus três lagos artificiais são
+                  interligados
+                  e ocupam 1,6 milhão de m2. Foi inaugurado em 1954 para comemorar o quarto centenário da cidade.</p>
+                <p>O que fazer no Parque do Ibirapuera</p>
+                </p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="card-content">
-          <div class="card-image card-img-two"></div>
-          <div class="card-text">
-            <h2>Casa das Rosas</h2>
-            <p>A Casa das Rosas é um imóvel localizado na Avenida Paulista em São Paulo, o casarão foi projetado pelo
-              escritório de Francisco de Paula Ramos de Azevedo pouco antes de sua morte, tendo a construção terminada
-              em 1935.</p>
-            <p>O que fazer na Casa das Rosas</p>
-            <a href="./Destinos.html#casadasrosas" class="card-btn">Saber Mais</a>
-          </div>
-        </div>
-
-        <div class="card-content">
-          <div class="card-image card-img-three"></div>
-          <div class="card-text">
-            <h2>Museu do Ipiranga</h2>
-            <p>O Parque da Independência, inaugurado em 1989, nas margens do córrego do bairro do Ipiranga, faz parte do
-              patrimônio histórico cultural brasileiro devido ao Grito da Independência do país, ali proclamada por D.
-              Pedro I.</p>
-            <p>O que fazer no Museu do Ipiranga</p>
-            <a href="./Destinos.html#museudoipiranga" class="card-btn">Saber Mais</a>
-          </div>
-        </div>
-
-        <div class="card-content">
-          <div class="card-image card-img-four"></div>
-          <div class="card-text">
-            <h2>Paranapiacaba</h2>
-            <p>Uma vila histórica em ruínas, conhecida também por sua arquitetura inglesa, já se candidatou a Patrimônio
-              Mundial da Humanidade e foi testemunha de uma importante fase de expansão da tecnologia ferroviária no
-              Brasil.</p>
-            <p>O que fazer em Paranapiacaba</p>
-            <a href="./Destinos.html#paranapiacaba" class="card-btn">Saber Mais</a>
-          </div>
-        </div>
-
-        <div class="card-content">
-          <div class="card-image card-img-five"></div>
-          <div class="card-text">
-            <h2>Theatro Municipal</h2>
-            <p>O Theatro Municipal de São Paulo que é um dos mais importantes teatros do Brasil e foi inaugurado em 1911
-              para atender ao desejo da elite paulista da época que desejava que a cidade estivesse à altura dos grandes
-              centros culturais.</p>
-            <p>O que fazer no Theatro Municipal</p>
-            <a href="./Destinos.html#theatromunicipal" class="card-btn">Saber Mais</a>
-          </div>
-        </div>
-
-        <div class="card-content">
-          <div class="card-image card-img-six"></div>
-          <div class="card-text">
-            <h2>Parque do Ibirapuera</h2>
-            <p>o Ibirapuera é o mais importante parque urbano de São Paulo. Seus três lagos artificiais são interligados
-              e ocupam 1,6 milhão de m2. Foi inaugurado em 1954 para comemorar o quarto centenário da cidade.</p>
-            <p>O que fazer no Parque do Ibirapuera</p>
-            <a href="./Destinos.html#parquedoibirapuera" class="card-btn">Saber Mais</a>
-          </div>
-        </div>
-
-
       </div>
-    </div>
 
 
-    <!-- Blog -->
-    <div class="blog" id="page-blog">
-      <div class="blog-head">
-        <h1>Gulliver Blog</h1>
-        <p>Mais Populares</p>
-      </div>
-      <div class="blog-container">
-        <div class="blog-image blog-img-one"></div>
-        <div class="blog-content">
-          <h2>10 Dificuldades para quem quer ser um mochileiro das galáxias</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam hic nobis nisi molestiae sapiente
-            atque nemo. Totam exercitationem adipisci tenetur reiciendis cumque hic. Facilis rem aliquam harum eveniet
-            saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam, quae cupiditate nesciunt
-            voluptatum vel aliquid a delectus reprehenderit ducimus voluptate consectetur officia soluta, dicta ad eaque
-            ea. Alias, mollitia.</p>
-          <a href="">Leia Mais</a>
-        </div>
-      </div>
-
-
-      <div class="blog-container">
-        <div class="blog-image blog-img-two"></div>
-        <div class="blog-content">
-          <h2>Maldivas: como planejar sua viagem dos sonhos e como escolher o hotel</h2>
-          <p>A cada ano que passa as ilhas Maldivas entram de vez na lista de preferência de muitos brasileiros, seja
-            para uma viagem romântica como lua de mel ou mesmo para uma viagem em família. E hoje, levando em conta que
-            Maldivas também entrou na minha lista, vamos falar sobre como organizar uma viagem para esse paraíso tão
-            desejado!.</p>
-          <a href="">Leia Mais</a>
-        </div>
-      </div>
-
-      <div class="blog-btn-todas">
-        <a href="">Todas as postagem</a>
-      </div>
 
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="footer-content">
-      <ul class="footer-menu">
-        <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="logo" class="logo">
-        <li class="footer-menu-item info">
-          Mergulhe nas nossas dicas para levar na mala a conexão de uma verdadeira experiência de viagem. Entregue-se de
-          corpo e alma à liberdade do autêntico!
-        </li>
-      </ul>
 
-      <ul class="footer-menu">
-        <p>Links úteis</p>
-        <li class="footer-menu-item link">
-          Ajuda
-        </li>
-        <li class="footer-menu-item link">
-          Sobre
-        </li>
-      </ul>
-
-      <div class="socials">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook-f"></i>
+  <!-- Blog -->
+  <div class="blog" id="page-blog">
+    <div class="blog-head">
+      <h1>Gulliver Blog</h1>
+      <p>Mais Populares</p>
+    </div>
+    <div class="blog-container">
+      <div class="blog-image blog-img-one"></div>
+      <div class="blog-content">
+        <h2>10 Dificuldades para quem quer ser um mochileiro das galáxias</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam hic nobis nisi molestiae sapiente
+          atque nemo. Totam exercitationem adipisci tenetur reiciendis cumque hic. Facilis rem aliquam harum eveniet
+          saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam, quae cupiditate nesciunt
+          voluptatum vel aliquid a delectus reprehenderit ducimus voluptate consectetur officia soluta, dicta ad eaque
+          ea. Alias, mollitia.</p>
+        <a href="">Leia Mais</a>
       </div>
     </div>
-  </footer>
+
+
+    <div class="blog-container">
+      <div class="blog-image blog-img-two"></div>
+      <div class="blog-content">
+        <h2>Maldivas: como planejar sua viagem dos sonhos e como escolher o hotel</h2>
+        <p>A cada ano que passa as ilhas Maldivas entram de vez na lista de preferência de muitos brasileiros, seja
+          para uma viagem romântica como lua de mel ou mesmo para uma viagem em família. E hoje, levando em conta que
+          Maldivas também entrou na minha lista, vamos falar sobre como organizar uma viagem para esse paraíso tão
+          desejado!.</p>
+        <a href="">Leia Mais</a>
+      </div>
+    </div>
+
+    <div class="blog-btn-todas">
+      <a href="">Todas as postagem</a>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="#">
+      <img src="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" alt="Logotipo" width="30" height="30"
+        class="d-inline-block align-top">
+      Traveller
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto mt-2 2 mt-lg-0">
+        <li class="nav-item active px-2 text-primary">
+          <i class="fa-brands fa-instagram"></i>
+        </li>
+        <li class="nav-item active px-2 text-primary">
+          <i class="fa-brands fa-twitter"></i>
+        </li>
+        <li class="nav-item active px-2 text-primary">
+          <i class="fa-brands fa-facebook-f"></i>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Ajuda</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Termos de Uso</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/9be75513e7.js" crossorigin="anonymous"></script>
