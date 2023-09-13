@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/travel-icon-png-25.jpg" />
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Gulliver Travel</title>
 </head>
@@ -40,6 +41,8 @@
 
   </header>
 
+
+
   <!-- Showcase -->
   <div class="showcase-destinos">
     <div class="showcase-container">
@@ -56,14 +59,14 @@
     </h4>
   </div>
 
-
+   
   <!--Conteúdos Lugares em São Paulo e Links-->
   <div id="block-container">
     <div class="block-content">
       <div class="block-coluna">
         <img src="./images/Theatro.jpg" alt="Imagem de São Paulo Theatro Municipal">
         <div class="block-texto">
-          <h3 id="theatromunicipal">Theatro Municipal</h3>
+          <h3>Theatro Municipal</h3>
           <p>
             O Theatro Municipal de São Paulo que é um dos mais importantes teatros do Brasil e foi inaugurado em 1911
             para atender ao desejo da elite paulista da época.
@@ -71,12 +74,13 @@
         </div>
         <a href="./Restaurantes.html#theatrorestaurante">Bares e Restaurantes</a>
         <a href="./Hoteis.html#theatrohotel">Hotéis e Pousadas</a>
+        <a id="theatromunicipal" href="#map">Localização</a>
       </div>
 
       <div class="block-coluna">
         <img src="./images/Ipiranga.jpg" alt="Imagem de São Paulo Museu do Ipiranga">
         <div class="block-texto">
-          <h3 id="museudoipiranga">Museu do Ipiranga</h3>
+          <h3>Museu do Ipiranga</h3>
           <p>
             O Museu Paulista da Universidade de São Paulo, mais conhecido como Museu do Ipiranga. Foi inaugurado
             oficialmente em 7 de setembro de 1895 é um importante símbolo da independência do Brasil.
@@ -84,12 +88,13 @@
         </div>
         <a href="./Restaurantes.html#restaurantemuseu">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelipiranga">Hotéis e Pousadas</a>
+        <a id="museudoipiranga" href="#map">Localização</a>
       </div>
 
       <div class="block-coluna">
         <img src="./images/Casa_das_Rosas.jpg" alt="Imagem de São Paulo Casa das Rosas">
         <div class="block-texto">
-          <h3 id="casadasrosas">Casa das Rosas</h3>
+          <h3>Casa das Rosas</h3>
           <p>
             A "Casa das Rosas" recebeu esse nome pois possuía um dos maiores e mais belos jardins de rosas da cidade. A
             partir de 2004, a Casa se tornou o Espaço Haroldo de Campos de Poesia e Literatura, o imóvel revela uma
@@ -98,12 +103,13 @@
         </div>
         <a href="./Restaurantes.html#restaurantecasadasrosas">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelcasadasrosas">Hotéis e Pousadas</a>
+        <a id="casadasrosas" href="#map">Localização</a>
       </div>
 
       <div class="block-coluna">
         <img src="./images/Fabrica_de_Sal.jpg" alt="Imagem de São Paulo Antiga Fábrica de Sal">
         <div class="block-texto">
-          <h3 id="antigafabrica">Antiga Fábrica</h3>
+          <h3>Antiga Fábrica</h3>
           <p>
             A antiga fábrica de Sal foi construída em 1898 durante o período da industrialização paulista em conjunto
             com a estação Ribeirão Pires Railway a edificação é tombada como patrimônio histórico de São Paulo.
@@ -111,12 +117,13 @@
         </div>
         <a href="./Restaurantes.html#restaurantefabrica">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelfabrica">Hotéis e Pousadas</a>
+        <a id="antigafabrica" href="#map">Localização</a>
       </div>
 
       <div class="block-coluna">
         <img src="./images/Paranapiacaba.jpg" alt="Imagem de São Paulo Paranapiacaba">
         <div class="block-texto">
-          <h3 id="paranapiacaba">Paranapiacaba</h3>
+          <h3>Paranapiacaba</h3>
           <p>
             Uma vila histórica em ruínas, conhecida também por sua arquitetura inglesa, já se candidatou a Patrimônio
             Mundial da Humanidade e foi testemunha de uma importante fase de expansão da tecnologia ferroviária no
@@ -125,12 +132,13 @@
         </div>
         <a href="./Restaurantes.html#restauranteparanapiacaba">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelparanapiacaba">Hotéis e Pousadas</a>
+        <a id="paranapiacaba" href="#map">Localização</a>
       </div>
 
       <div class="block-coluna">
         <img src="./images/Parque-do-Ibirapuera.jpg" alt="Imagem de São Paulo Parque Ibirapuera">
         <div class="block-texto">
-          <h3 id="parquedoibirapuera">Parque do Ibirapuera</h3>
+          <h3>Parque do Ibirapuera</h3>
           <p>
             Reduto dos paulistanos, o Ibirapuera é o mais importante parque urbano de São Paulo. Seus três lagos
             artificiais são interligados e ocupam 1,6 milhão de m2. Possui muita diversidade em volta dele.
@@ -138,9 +146,13 @@
         </div>
         <a href="./Restaurantes.html#restauranteparqueibirapuera">Bares e Restaurantes</a>
         <a href="./Hoteis.html#hotelibirapuera">Hotéis e Pousadas</a>
+        <a id="parquedoibirapuera" href="#map">Localização</a>
       </div>
     </div>
   </div>
+
+  <!-- API -->
+  <div class="map" id="map"></div>
 
   <!-- Footer -->
   <footer id="footer">
@@ -173,6 +185,11 @@
 
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/9be75513e7.js" crossorigin="anonymous"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkT5nnH0ix5Kf_z5ZNtQ-_qJX17qdXLbo&callback=initMap&libraries=places&v=weekly"
+  defer
+></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

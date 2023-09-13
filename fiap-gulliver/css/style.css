@@ -6,17 +6,28 @@
   text-decoration: none;
 }
 
+#map {
+  height: 50%;
+  width: 50%;
+  left: 25%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+html,
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 38px;
-  
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a{
   color: inherit;
 }
-
 
 /* Utility Classes */
 .tag-item {

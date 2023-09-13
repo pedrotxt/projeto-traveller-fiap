@@ -1,0 +1,80 @@
+<!doctype html>
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Place Details</title>
+    <!-- jsFiddle will insert css and js -->
+  </head>
+  <body>
+    <div id="map"></div>
+oi
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkT5nnH0ix5Kf_z5ZNtQ-_qJX17qdXLbo&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+    <script type="text/javascript">
+        function initMap() {
+    const ibirapuera = { lat: -23.588333, lng: -46.658890 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+    center: ibirapuera,
+    zoom: 15,
+  });
+  const request = {
+    placeId: "ChIJN1t_tDeuEmsRUsoyG83frY4",
+    fields: ["name", "formatted_address", "place_id", "geometry"],
+  };
+  const infowindow = new google.maps.InfoWindow();
+  const service = new google.maps.places.PlacesService(map);
+
+  service.getDetails(request, (place, status) => {
+    if (
+      status === google.maps.places.PlacesServiceStatus.OK &&
+      place &&
+      place.geometry &&
+      place.geometry.location
+    ) {
+      const marker = new google.maps.Marker({
+        map,
+        position: ibirapuera,
+      });
+
+      google.maps.event.addListener(marker, "click", () => {
+        const content = document.createElement("div");
+        const nameElement = document.createElement("h2");
+
+        nameElement.textContent = place.name;
+        content.appendChild(nameElement);
+
+        const placeIdElement = document.createElement("p");
+
+        placeIdElement.textContent = place.place_id;
+        content.appendChild(placeIdElement);
+
+        const placeAddressElement = document.createElement("p");
+
+        placeAddressElement.textContent = place.formatted_address;
+        content.appendChild(placeAddressElement);
+        infowindow.setContent(content);
+        infowindow.open(map, marker);
+      });
+    }
+  });
+}
+
+window.initMap = initMap;
+
+    </script>
+  </body>
+</html>
